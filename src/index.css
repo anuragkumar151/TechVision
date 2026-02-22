@@ -2,22 +2,29 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Prevent Horizontal Scroll Globally */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa;
+  overflow-x: hidden;
 }
 
-/* Smooth animations */
+/* ========================= */
+/* Smooth Animations */
+/* ========================= */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -96,45 +103,44 @@ body {
   animation: scaleUp 0.6s ease-out;
 }
 
-/* Custom Tailwind classes */
+/* ========================= */
+/* Custom Tailwind Utilities */
+/* ========================= */
+
 @layer utilities {
   .text-gradient {
     @apply bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent;
   }
-  
+
   .card-hover {
     @apply hover:shadow-xl hover:scale-105 transition-all duration-300;
   }
-  
+
   .btn-primary {
     @apply bg-gradient-to-r from-blue-600 to-teal-500 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all;
   }
-  
+
   .btn-secondary {
     @apply border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all;
   }
-  
+
   .section-title {
     @apply text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-center;
   }
-  
+
   .section-subtitle {
     @apply text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto;
   }
-  
+
   .glow-effect {
     @apply shadow-lg shadow-blue-500/50;
   }
 }
 
-/* Smooth scroll behavior for anchor links */
-@supports (scroll-behavior: smooth) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
+/* ========================= */
+/* Scroll Reveal Animations */
+/* ========================= */
 
-/* Animations for scroll reveal */
 @keyframes revealFromLeft {
   from {
     opacity: 0;
@@ -157,7 +163,10 @@ body {
   }
 }
 
-/* Gradient background animation */
+/* ========================= */
+/* Gradient Animation */
+/* ========================= */
+
 @keyframes gradientShift {
   0%, 100% {
     background-position: 0% 50%;
@@ -172,7 +181,7 @@ body {
   animation: gradientShift 6s ease infinite;
 }
 
-/* Delay animations */
+/* Animation Delays */
 .animate-delay-100 {
   animation-delay: 0.1s;
 }
