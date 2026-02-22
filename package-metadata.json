@@ -1,0 +1,12 @@
+{
+  "name": "techvision-web",
+  "version": "1.0.0",
+  "description": "Modern IT Solutions Company Website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/techvision-website.git"
+  },
+  "keywords": ["IT Solutions", "Web Development", "React", "Vite"],
+  "author": "TechVision Team",
+  "license": "MIT"
+}

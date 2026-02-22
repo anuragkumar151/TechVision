@@ -1,0 +1,66 @@
+node_modules# TechVision Website
+
+
+
+
+
+
+
+
+
+
+.idea.vscode*.swp*.log.DS_Store.env.*.local.env.local.envdist
+Modern IT solutions company website built with React and Vite.
+
+## Quick Start
+
+```bash
+npm install
+npm run dev
+```
+
+Visit `http://localhost:5173` in your browser.
+
+## Build
+
+```bash
+npm run build
+```
+
+## Deploy
+
+See README.md for deployment instructions on Vercel, Netlify, Azure, or AWS.
+
+## Features
+
+- ✨ Modern responsive design
+- 🚀 Fast performance with Vite
+- 📱 Mobile-first approach
+- 🎨 Beautiful UI with Tailwind CSS
+- 📧 Contact form ready for backend integration
+- 🔍 SEO optimized
+
+## Pages
+
+- Home - Hero, services, portfolio, testimonials
+- Services - Detailed service listings
+- Portfolio - Project showcase
+- About - Company story and team
+- Contact - Contact form and business info
+
+## Customization
+
+1. Update company name/logo in `Navbar.tsx`
+2. Modify services in `Home.tsx` and `Services.tsx`
+3. Update portfolio in `Portfolio.tsx`
+4. Add team info in `About.tsx`
+5. Set contact details in `Contact.tsx` and `Footer.tsx`
+6. Change colors in `tailwind.config.js`
+
+## Next Steps
+
+1. Replace emoji placeholders with actual images
+2. Update company information
+3. Add backend API integration for contact form
+4. Deploy to your preferred hosting platform
+5. Set up domain and SSL certificate
